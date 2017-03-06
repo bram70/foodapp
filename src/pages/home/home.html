@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Menu principal</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+
+  <ion-card>
+    <a href="#" (click)="GoPlaces('fastfood')">
+    <img src="assets/img/fast-food.jpg" />
+    <div class="card-title">Comida Rápida</div>
+    <div class="card-subtitle">41+ cercanos </div>
+    </a>
+  </ion-card>
+
+  <ion-card>
+    <a href="#" (click)="GoPlaces('restaurants')">
+    <img src="assets/img/restaurant.jpeg" />
+    <div class="card-title" (click)="GoPlaces('museums')">Restaurants</div>
+    <div class="card-subtitle">64+ cercanos</div>
+    </a>
+  </ion-card>
+
+  <ion-card>
+    <a href="#" (click)="GoPlaces('events')">
+    <img src="assets/img/events.jpg" />
+    <div class="card-title" (click)="GoPlaces('museums')">Eventos</div>
+    <div class="card-subtitle">72+ cercanos</div>
+    </a>
+  </ion-card>
+
+  <ion-card>
+    <a href="#" (click)="GoPlaces('museums')">
+    <img src="assets/img/museums.jpg"/>
+    <div class="card-title" (click)="GoPlaces('museums')" >Museos</div>
+    <div class="card-subtitle">28+ Cercanos</div>
+    </a>
+  </ion-card>
+
+</ion-content>
