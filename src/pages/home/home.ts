@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { TimeLinePage } from '../timeline/timeline';
 
 @Component({
   selector: 'page-home',
@@ -12,7 +13,9 @@ export class HomePage {
 
   }
   GoPlaces(keyword){
-  	alert(keyword);
+  	this.navCtrl.push(TimeLinePage, {
+  		page: keyword
+  	});
   }
 
 }
